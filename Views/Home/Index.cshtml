@@ -1,0 +1,23 @@
+﻿@model yelptestapp.Models.FoodTypeModel
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="text-center">
+                <form method="post" asp-controller="Home" asp-action="Index">
+                    <div class="form-group">
+                        <label asp-for="FoodType">City:</label>
+                        <input asp-for="FoodType" class="form-control">
+                        <span asp-validation-for="FoodType" class="text-danger"></span>
+                        <label asp-for="Category">Category:</label>
+                        <input asp-for="Category" class="form-control">
+                        <span asp-validation-for="Category" class="text-danger"></span>
+                        <label asp-for="Travel">Distance(Miles):</label>
+                        <input type="number" asp-for="Travel" class="form-control">
+                        <span asp-validation-for="Travel" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

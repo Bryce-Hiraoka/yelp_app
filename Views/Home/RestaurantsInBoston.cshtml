@@ -1,0 +1,19 @@
+@model List<YelpApiResponse.Business>
+
+<div class="text-center">
+    <h1>Yelp Restaurants in Boston</h1>
+    <li>
+        @foreach (var business in Model)
+        {
+            <li>
+                <strong>@business.name</strong><br />
+                Rating: @business.rating<br />
+                Address: @business.location.address1, @business.location.city<br /><br />
+            </li>
+        }
+        else
+        {
+            <p>No Businesses Found</p>
+        }
+    </li>
+</div>
