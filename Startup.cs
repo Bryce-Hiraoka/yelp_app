@@ -48,6 +48,7 @@ namespace yelptestapp
 
             app.UseAuthorization();
 
+            // this defines the enpoint routes
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

@@ -9,13 +9,13 @@ namespace yelptestapp.Models
         public Location location { get; set; }  // Address/location of the restaurant
         // Add more properties as needed
 
-        // Constructor (optional)
+        // Constructor 
         public Business()
         {
             location = new Location(); // Initialize the Location property
         }
 
-        // Methods (optional)
+        // Methods
         public string GetFormattedAddress()
         {
             return $"{location.address1}, {location.city}";
